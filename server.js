@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 // Auto Update Panchangam Daily
-cron.schedule("0 0 * * *", async () => {
+cron.schedule("* * * * *", async () => {
   try {
 
     const todayData = {
